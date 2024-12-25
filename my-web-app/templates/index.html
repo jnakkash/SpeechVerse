@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎶 Speech Verse Audio Explorer 🎶</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-header">
+        <h1>🎵 Speech Verse Audio Explorer 🎵</h1>
+        <p>Recognize music, explore artists, and discover tracks like never before!</p>
+    </header>
+
+    <main>
+        <section class="record-controls">
+            <button id="record-btn" class="action-btn">🎙️ Start Recording</button>
+            <button id="stop-btn" class="action-btn" disabled>⏹️ Stop Recording</button>
+            <p id="status" class="status-text">Press "Start Recording" to begin.</p>
+        </section>
+
+        <section class="recognized-song">
+            <h2>🎧 Recognized Song</h2>
+            <div id="recognized-song" class="song-highlight"></div>
+        </section>
+
+        <section class="artist-songs">
+            <h2>🌟 More Songs by the Artist</h2>
+            <div id="other-songs" class="song-gallery"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Audio Explorer. Built with ❤️ by Flask, AudD, and OpenAI.</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
